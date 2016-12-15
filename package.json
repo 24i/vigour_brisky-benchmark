@@ -16,8 +16,7 @@
     "dev-perf-browser": "budo ./test/performance/index.js -p 8080 --live",
     "dev-perf-webgl": "budo ./test/performance/webgl.js -p 8080 --live",
     "dev-perf-canvas": "budo ./test/performance/webgl.js -p 8080 --live",
-    "cover": "istanbul cover --report none --print detail test/index.js",
-    "travis": "npm run cover -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0) && standard"
+    "travis": "npm test"
   },
   "repository": {
     "type": "git",
@@ -36,10 +35,8 @@
     "brisky-struct": "0.0.33",
     "brisky-base": "^4.0.0",
     "brisky-performance": "^1.4.2",
-    "coveralls": "^2.11.9",
     "ducktape": "^1.0.0",
     "immutable": "^3.8.1",
-    "istanbul": "^0.4.3",
     "nodemon": "^1.11.0",
     "observ": "0.2.0",
     "pixi.js": "^4.2.2",
