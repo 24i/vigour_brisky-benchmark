@@ -1,10 +1,10 @@
 {
-  "name": "brisky-struct",
-  "description": "An observable data structure",
-  "version": "0.0.33",
-  "main": "dist/brisky-struct.js",
-  "module": "dist/brisky-struct.es.js",
-  "jsnext:main": "dist/brisky-struct.es.js",
+  "name": "brisky-benchmark",
+  "description": "Performance benchmark for brisky",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
@@ -33,17 +33,9 @@
     "observable"
   ],
   "dependencies": {
-    "brisky-stamp": "^2.1.1",
-    "monotonic-timestamp": "0.0.9"
-  },
-  "browser": {
-    "./test/index.js": "./test/browser.js"
-  },
-  "devDependencies": {
+    "brisky-struct": "0.0.33",
     "brisky-base": "^4.0.0",
     "brisky-performance": "^1.4.2",
-    "buble": "0.14.0",
-    "budo": "^9.0.0",
     "coveralls": "^2.11.9",
     "ducktape": "^1.0.0",
     "immutable": "^3.8.1",
