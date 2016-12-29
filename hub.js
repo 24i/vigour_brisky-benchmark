@@ -1,9 +1,21 @@
 const hub = require('hub.js')
+// const { struct } = require('brisky-struct')
+
 const n = 1e3
 
 console.log('benchmark hub.js: n = ' + ((n / 1e3) | 0) + 'k')
 
+// ok so something with context remove
+// const cl = struct.create({
+//   props: {
+//     default: 'self'
+//   }
+// })
+
+// const server = cl.create()
+
 const server = hub()
+// const server = struct.create()
 
 const someData = {}
 
@@ -29,3 +41,5 @@ server.set({ someData })
 var d = Date.now()
 server.set(null)
 console.log(Date.now() - d, 'ms')
+
+// its context probably

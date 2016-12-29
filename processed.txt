@@ -1,0 +1,160 @@
+Statistical profiling result from isolate-0x103803c00-v8.log, (97 ticks, 11 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+      7    7.2%          /usr/lib/system/libsystem_kernel.dylib
+      5    5.2%          /usr/lib/system/libsystem_platform.dylib
+      4    4.1%          /usr/lib/system/libsystem_c.dylib
+      1    1.0%          /usr/lib/system/libsystem_malloc.dylib
+      1    1.0%          /usr/lib/system/libsystem_m.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      1    1.0%    1.3%  Stub: ToBooleanICStub(Undefined,SpecObject)
+      1    1.0%    1.3%  Stub: LoadGlobalICTrampolineStub
+      1    1.0%    1.3%  Stub: HasPropertyStub
+      1    1.0%    1.3%  Stub: CompareICStub
+      1    1.0%    1.3%  LazyCompile: ~send /Users/jimdebeer/Desktop/brisky/hub.js/dist/index.js:78:14
+      1    1.0%    1.3%  LazyCompile: ~objects /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1152:17
+      1    1.0%    1.3%  LazyCompile: ~getProp /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:817:17
+      1    1.0%    1.3%  LazyCompile: *getFn /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:47:15
+      1    1.0%    1.3%  LazyCompile: *exports$1.type.stamp /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-stamp/dist/index.js:42:20
+      1    1.0%    1.3%  Handler: symbol("nonexistent_symbol" hash 27f9c056)
+      1    1.0%    1.3%  Handler: indexOf
+      1    1.0%    1.3%  Handler: An IC handler from the snapshot {1}
+      1    1.0%    1.3%  Handler: An IC handler from the snapshot
+
+ [C++]:
+   ticks  total  nonlib   name
+     25   25.8%   31.6%  node::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    2.1%    2.5%  node::Binding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.0%    1.3%  void v8::internal::Scanner::Advance<false, true>()
+      1    1.0%    1.3%  void v8::internal::BodyDescriptorBase::IterateBodyImpl<v8::internal::StaticScavengeVisitor<(v8::internal::PromotionMode)1> >(v8::internal::Heap*, v8::internal::HeapObject*, int, int)
+      1    1.0%    1.3%  v8::internal::compiler::LinearScanAllocator::TryAllocateFreeReg(v8::internal::compiler::LiveRange*)
+      1    1.0%    1.3%  v8::internal::compiler::InstructionSelector::VisitNode(v8::internal::compiler::Node*)
+      1    1.0%    1.3%  v8::internal::compiler::ConstraintBuilder::MeetConstraintsAfter(int)
+      1    1.0%    1.3%  v8::internal::Zone::New(unsigned long)
+      1    1.0%    1.3%  v8::internal::StringTable::LookupKey(v8::internal::Isolate*, v8::internal::HashTableKey*)
+      1    1.0%    1.3%  v8::internal::String::IsOneByteEqualTo(v8::internal::Vector<unsigned char const>)
+      1    1.0%    1.3%  v8::internal::StoreIC::UpdateCaches(v8::internal::LookupIterator*, v8::internal::Handle<v8::internal::Object>, v8::internal::Object::StoreFromKeyed)
+      1    1.0%    1.3%  v8::internal::Space::AllocationStep(unsigned char*, int)
+      1    1.0%    1.3%  v8::internal::Scope::Snapshot::Snapshot(v8::internal::Scope*)
+      1    1.0%    1.3%  v8::internal::Scope::ResolveVariablesRecursively(v8::internal::ParseInfo*, v8::internal::AstNodeFactory*)
+      1    1.0%    1.3%  v8::internal::Scanner::ScanIdentifierOrKeyword()
+      1    1.0%    1.3%  v8::internal::ParserBase<v8::internal::Parser>::CheckPossibleEvalCall(v8::internal::Expression*, v8::internal::Scope*)
+      1    1.0%    1.3%  v8::internal::Map::SetPrototype(v8::internal::Handle<v8::internal::Map>, v8::internal::Handle<v8::internal::Object>, v8::internal::PrototypeOptimizationMode)
+      1    1.0%    1.3%  v8::internal::KeywordOrIdentifierToken(unsigned char const*, int)
+      1    1.0%    1.3%  v8::internal::InternalizedStringKey::InternalizedStringKey(v8::internal::Handle<v8::internal::String>)
+      1    1.0%    1.3%  v8::internal::Heap::Scavenge()
+      1    1.0%    1.3%  v8::internal::HashTable<v8::internal::NameDictionary, v8::internal::NameDictionaryShape, v8::internal::Handle<v8::internal::Name> >::Rehash(v8::internal::Handle<v8::internal::NameDictionary>, v8::internal::Handle<v8::internal::Name>)
+      1    1.0%    1.3%  v8::internal::HValue::Hashcode()
+      1    1.0%    1.3%  v8::internal::HOptimizedGraphBuilder::HandleKeyedElementAccess(v8::internal::HValue*, v8::internal::HValue*, v8::internal::HValue*, v8::internal::Expression*, v8::internal::FeedbackVectorSlot, v8::internal::BailoutId, v8::internal::BailoutId, v8::internal::PropertyAccessType, bool*)
+      1    1.0%    1.3%  v8::internal::HEscapeAnalysisPhase::CollectCapturedValues()
+      1    1.0%    1.3%  v8::internal::FullCodeGenerator::VisitNoStackOverflowCheck(v8::internal::AstNode*)
+      1    1.0%    1.3%  v8::internal::AstTyper::VisitProperty(v8::internal::Property*)
+      1    1.0%    1.3%  node::SetupNextTick(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.0%    1.3%  node::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.0%    1.3%  node::Buffer::Utf8Slice(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.0%    1.3%  bool v8::internal::ScavengingVisitor<(v8::internal::MarksHandling)1, (v8::internal::PromotionMode)1, (v8::internal::LoggingAndProfiling)0>::SemiSpaceCopyObject<(v8::internal::AllocationAlignment)0>(v8::internal::Map*, v8::internal::HeapObject**, v8::internal::HeapObject*, int)
+
+ [Summary]:
+   ticks  total  nonlib   name
+     13   13.4%   16.5%  JavaScript
+     55   56.7%   69.6%  C++
+      7    7.2%    8.9%  GC
+     18   18.6%          Shared libraries
+     11   11.3%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+     30   51.7%   30.9%  v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      8   13.8%    8.2%  v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    6.9%    4.1%  v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      4    6.9%    4.1%  v8::internal::Runtime_CompileOptimized_Concurrent(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    5.2%    3.1%  v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      3    5.2%    3.1%  v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      2    3.4%    2.1%  v8::internal::Runtime_NewObject(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.7%    1.0%  v8::internal::Runtime_ToBooleanIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.7%    1.0%  v8::internal::Runtime_DefineGetterPropertyUnchecked(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.7%    1.0%  v8::internal::Runtime_BinaryOpIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1    1.7%    1.0%  v8::internal::Builtin_NumberPrototypeToString(int, v8::internal::Object**, v8::internal::Isolate*)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 2.0% are not shown.
+
+   ticks parent  name
+     25   25.8%  node::ContextifyScript::New(v8::FunctionCallbackInfo<v8::Value> const&)
+     25  100.0%    v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+     20   80.0%      LazyCompile: ~runInThisContext bootstrap_node.js:391:28
+     20  100.0%        LazyCompile: ~NativeModule.compile bootstrap_node.js:473:44
+     20  100.0%          LazyCompile: ~NativeModule.require bootstrap_node.js:407:34
+      5   25.0%            LazyCompile: ~startup bootstrap_node.js:12:19
+      2   10.0%            Function: ~<anonymous> stream.js:1:11
+      2   10.0%            Function: ~<anonymous> module.js:1:11
+      2   10.0%            Function: ~<anonymous> http.js:1:11
+      1    5.0%            LazyCompile: ~setupGlobalVariables bootstrap_node.js:190:32
+      1    5.0%            LazyCompile: ~setupGlobalTimeouts bootstrap_node.js:218:31
+      1    5.0%            Function: ~<anonymous> util.js:1:11
+      1    5.0%            Function: ~<anonymous> url.js:1:11
+      1    5.0%            Function: ~<anonymous> timers.js:1:11
+      1    5.0%            Function: ~<anonymous> net.js:1:11
+      1    5.0%            Function: ~<anonymous> fs.js:1:11
+      1    5.0%            Function: ~<anonymous> _http_outgoing.js:1:11
+      1    5.0%            Function: ~<anonymous> _http_agent.js:1:11
+      5   20.0%      LazyCompile: ~exports.runInThisContext vm.js:75:36
+      5  100.0%        LazyCompile: ~Module._compile module.js:513:37
+      5  100.0%          LazyCompile: ~Module._extensions..js module.js:580:37
+      5  100.0%            LazyCompile: ~Module.load module.js:481:33
+
+     11   11.3%  UNKNOWN
+
+      7    7.2%  /usr/lib/system/libsystem_kernel.dylib
+      2   28.6%    v8::internal::Runtime_LoadIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   50.0%      LazyCompile: ~exports.debuglog util.js:142:28
+      1  100.0%        Function: ~<anonymous> _stream_readable.js:1:11
+      1  100.0%          LazyCompile: ~NativeModule.compile bootstrap_node.js:473:44
+      1  100.0%            LazyCompile: ~NativeModule.require bootstrap_node.js:407:34
+      1   50.0%      LazyCompile: ~create$1 /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1067:18
+      1  100.0%        LazyCompile: ~on /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1392:14
+      1  100.0%          LazyCompile: ~objects /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1152:17
+      1  100.0%            LazyCompile: ~set /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1193:13
+      1   14.3%    v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~NativeModule bootstrap_node.js:396:24
+      1  100.0%        LazyCompile: ~NativeModule.require bootstrap_node.js:407:34
+      1  100.0%          LazyCompile: ~setupGlobalVariables bootstrap_node.js:190:32
+      1  100.0%            LazyCompile: ~startup bootstrap_node.js:12:19
+      1   14.3%    v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~create$1 /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1067:18
+      1  100.0%        LazyCompile: ~property /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:799:18
+      1  100.0%          LazyCompile: ~definition /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1494:24
+      1  100.0%            LazyCompile: ~objects /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1152:17
+
+      5    5.2%  /usr/lib/system/libsystem_platform.dylib
+
+      4    4.1%  /usr/lib/system/libsystem_c.dylib
+      1   25.0%    v8::internal::Runtime_StoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~ReadableState _stream_readable.js:35:23
+      1  100.0%        LazyCompile: ~Readable _stream_readable.js:104:18
+      1  100.0%          LazyCompile: ~Duplex _stream_duplex.js:23:16
+      1  100.0%            LazyCompile: ~Socket net.js:128:16
+      1   25.0%    v8::internal::Runtime_KeyedStoreIC_Miss(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~props /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1447:10
+      1  100.0%        LazyCompile: ~objects /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1152:17
+      1  100.0%          LazyCompile: ~set /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1193:13
+      1  100.0%            LazyCompile: ~create$1 /Users/jimdebeer/Desktop/brisky/hub.js/node_modules/brisky-struct/dist/index.js:1067:18
+      1   25.0%    v8::internal::Runtime_CompileLazy(int, v8::internal::Object**, v8::internal::Isolate*)
+      1  100.0%      LazyCompile: ~realpathSync fs.js:1462:40
+      1  100.0%        LazyCompile: ~toRealPath module.js:131:20
+      1  100.0%          LazyCompile: ~Module._findPath module.js:150:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename module.js:458:35
+
+      2    2.1%  node::Binding(v8::FunctionCallbackInfo<v8::Value> const&)
+      2  100.0%    v8::internal::Builtin_HandleApiCall(int, v8::internal::Object**, v8::internal::Isolate*)
+      1   50.0%      Function: ~<anonymous> net.js:1:11
+      1  100.0%        LazyCompile: ~NativeModule.compile bootstrap_node.js:473:44
+      1  100.0%          LazyCompile: ~NativeModule.require bootstrap_node.js:407:34
+      1  100.0%            Function: ~<anonymous> _http_agent.js:1:11
+      1   50.0%      Function: ~<anonymous> bootstrap_node.js:10:10
+
